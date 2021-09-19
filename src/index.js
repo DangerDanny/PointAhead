@@ -1,7 +1,13 @@
-import helloWorld from "./scripts/helloWorld";
-import Prism from "prismjs";
+import * as bootstrap from "bootstrap";
+import localStartCount from "./scripts/localStartCount";
+import addOne from "./scripts/addOne";
 
-import "prismjs/themes/prism-coy.css";
-import "prismjs/components/prism-scss";
+let theParent = document.querySelector("#taskList");
+let totalCount = Number(document.getElementById("total").innerHTML);
+theParent.addEventListener("click", addOne, false);
 
-helloWorld();
+localStartCount("total", Number(localStorage.getItem("total")));
+const allButtons = document.querySelectorAll("button");
+allButtons.forEach((element) => {
+  localStartCount(element.id, localStorage.getItem(element.id));
+});

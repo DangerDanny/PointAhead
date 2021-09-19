@@ -1,25 +1,66 @@
 <main class="wrapper">
-  <header class="header section">
-    <div class="container">
-      <include
-        src="partials/header.html"
-        locals='{ "title": "HTML, SASS, and JavaScript Starter Template"}'
-      ></include>
+  <div class="container text-center">
+    <h2 class="display-4 text-light py-3">Total Points:<span class="ps-1" id="total">0</span></h2>
+
+    <div
+      class="
+        d-flex
+        flex-column
+        justify-content-center
+        d-grid
+        gap-3
+        col-6
+        mx-auto
+      "
+      id="taskList"
+    >
+      <button type="button" id="Goal Tasks" class="btn btn-outline-warning">
+        Goal Tasks:
+        <span>0</span>
+      </button>
+      <button type="button" id="Daily Tasks" class="btn btn-outline-light">
+        Daily Tasks:
+        <span>0</span>
+      </button>
+      <button type="button" id="Will Power" class="btn btn-outline-light">
+        Will Power:
+        <span>0</span>
+      <button type="button" id="Lost Weight" class="btn btn-outline-light">
+        Lost Weight:
+        <span>0</span>
+      </button>
+      <button type="button" id="Quick Reply" class="btn btn-outline-info">
+        Quick Reply:
+        <span>0</span>
+      </button>
+      <button type="button" id="Flags" class="btn btn-outline-info">
+        Flags:
+        <span>0</span>
+      </button>
+      <button
+        type="button"
+        id="Salesforce Tasks"
+        class="btn btn-outline-info"
+      >
+        Salesforce Tasks:
+        <span>0</span>
+      </button>
+      <button
+        type="button"
+        id="Salesforce logged email"
+        class="btn btn-outline-info"
+      >
+        Salesforce logged Email:
+        <span>0</span>
+      </button>
+      <button
+      type="button"
+      id="Verbal Orders"
+      class="btn btn-outline-info"
+    >
+      Verbal Orders:
+      <span>0</span>
+    </button>
     </div>
-  </header>
-  <section class="features section">
-    <div class="container">
-      <include src="partials/features.html"></include>
-    </div>
-  </section>
-  <section class="parcel section">
-    <div class="container">
-      <include src="partials/parcel.html"></include>
-    </div>
-  </section>
-  <footer class="footer section">
-    <div class="container">
-      <include src="partials/footer.html"></include>
-    </div>
-  </footer>
+  </div>
 </main>

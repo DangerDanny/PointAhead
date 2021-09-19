@@ -1,7 +1,7 @@
 {
-  "name": "parcel-html-sass-js-starter-template",
-  "version": "0.1.0",
-  "description": "Starter template for building static web apps with HTML partials, SASS, and JavaScript.",
+  "name": "PointAhead",
+  "version": "0.0.1",
+  "description": "test",
   "scripts": {
     "clean": "rimraf dist",
     "start": "npm run clean && parcel serve ./src/index.html",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aileen-r/parcel-html-sass-js-starter-template.git"
+    "url": "git+https://github.com/DangerDanny/PointAhead"
   },
-  "author": "Aileen Rae",
+  "author": "DangerDanny",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aileen-r/parcel-html-sass-js-starter-template/issues"
+    "url": "https://github.com/DangerDanny/PointAhead"
   },
-  "homepage": "https://parcel-html-sass-js-starter-template.netlify.app",
+  "homepage": "https://github.com/DangerDanny/PointAhead",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-rc.0",
     "parcel": "^2.0.0-rc.0",
@@ -25,6 +25,8 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
+    "@popperjs/core": "^2.10.1",
+    "bootstrap": "^5.1.1",
     "prismjs": "^1.24.1"
   }
 }
