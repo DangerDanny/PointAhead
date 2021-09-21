@@ -37,7 +37,6 @@ function addOne(t) {
 }
 
 localStartCount("total", Number(localStorage.getItem("total")));
-console.log(totalCount);
 const allButtons = document.querySelectorAll("button");
 allButtons.forEach((element) => {
   localStartCount(element.id, localStorage.getItem(element.id));

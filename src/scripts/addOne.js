@@ -8,9 +8,7 @@ const addOne = (t) => {
     document.getElementById(clickedItem).firstElementChild.innerHTML = count;
     localStorage.setItem(clickedItem, count);
     if (clickedItem === "Goal Tasks") {
-      console.log(global.totalCount);
       global.totalCount += 2;
-      console.log(global.totalCount);
     } else {
       global.totalCount++;
     }
