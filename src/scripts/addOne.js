@@ -7,7 +7,7 @@ const addOne = (t) => {
     count++;
     document.getElementById(clickedItem).firstElementChild.innerHTML = count;
     localStorage.setItem(clickedItem, count);
-    if (clickedItem === "Goal Tasks" || "Coding Videos") {
+    if (clickedItem === "Goal Tasks" || clickedItem === "Coding Videos") {
       global.totalCount += 2;
     } else {
       global.totalCount++;
